@@ -7,7 +7,7 @@ const Weather = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
-  const API_KEY = 'c9decce69760a09d4e7d18fa3b38ecc3';
+  const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
   const API_BASE_URL = 'https://api.openweathermap.org/data/2.5/weather';
 
   useEffect(() => {
